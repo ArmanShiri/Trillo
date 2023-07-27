@@ -1,0 +1,119 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-2);
+    box-shadow: var(--shadow-dark);
+
+    min-height: 50rem;
+
+    @media only screen and (max-width: 87.5em) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        min-height: 100vh; //could be comment (optional)
+    }
+
+    @media only screen and (max-width: 75em) {
+        background-color: var(--color-grey-light-2);
+    }
+
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-grey-light-2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 75em) {
+        align-self: center;
+        background-color: var(--color-grey-light-2);
+        border-bottom: none;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        font-size: .8rem;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+        flex-wrap: wrap;
+        align-items: space-between;
+        height: 12rem;
+    }
+}
+
+.content {
+    display: flex;
+
+    @media only screen and (max-width: 62.5em) {
+        flex-direction: column;
+    }
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 62.5em) {
+        flex: 1;
+    }
+}
+
+.hotel-view {
+    background-color: var(--color-white);
+    flex: 1;
+}   
+
+.detail {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--border-grey);
+
+    @media only screen and (max-width: 62.5em) {
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+        flex-direction: column;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+}
+
+.description {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4rem;
+
+    @media only screen and (max-width: 62.5em) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+        padding: 1.5rem;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+.user-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+}
